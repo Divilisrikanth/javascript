@@ -49,19 +49,46 @@ console.log(g<<=h)
 console.log(g>>=h)
 console.log(g>>>=h)
 //logical operators
-m=0;
-n=1;
-console.log(m&&n)
-console.log(m||n)
-let x1=2;
-let y1="abc";
-let z1=2;
-console.log(x1==z1)
-console.log(x1===z1)
-console.log(z1==y1)
-console.log(x1==y1)
-console.log(x1===y1)
+// m=0;
+// n=1;
+// console.log(m&&n)
+// console.log(m||n)
+// let x1=2;
+// let y1="abc";
+// let z1=2;
+// console.log(x1==z1)
+// console.log(x1===z1)
+// console.log(z1==y1)
+// console.log(x1==y1)
+// console.log(x1===y1)
 
+//pre-increment
+x=3
+y=++x;
+console.log(y)
+//postincrement
+x1=4
+y=x1++
+console.log(y)
+y=x1
+console.log(y)
+//strict comparsion
+x5=5;
+x6='5';
+console.log(x5==x6)
+console.log(x5===x6)
 
-
-
+//logical operators And 
+j=1;
+k=1;
+console.log(j&&=k)
+//or
+j1=1;
+k1=0;
+console.log(j1||=k1)
+j2=0;
+k2=1;
+console.log(j2??=k2)
+j3=0
+k3=1
+console.log(j3!=k3)
