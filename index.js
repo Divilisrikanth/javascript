@@ -92,3 +92,32 @@ console.log(j2??=k2)
 j3=0
 k3=1
 console.log(j3!=k3)
+
+const person ={
+    firstName:"John",
+    lastName:"Doe",
+    id :5566,
+    occupation:"Engineer",
+    work: function(){
+        console.log(this.firstName +" "+this.lastName+" "+this.occupation)
+    },
+    Employee_id:function(){
+        console.log(this.occupation+" "+this.id)
+    },
+    Change_of_newjob:function(){
+       this.occupation="sr.software Engineer"
+       console.log(this.occupation)
+    },
+    change_of_newid:function(){
+        console.log(this.id);
+        this.id=5745;
+        console.log(this.id);
+
+    }
+
+}
+person.Change_of_newjob();
+person.change_of_newid();
+person.Employee_id()
+person.work()
+console.log(Math.ceil(Math.random()))
